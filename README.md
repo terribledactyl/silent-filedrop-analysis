@@ -19,6 +19,7 @@ Analyze a compiled Windows executable with no source code provided. Identify fun
 - It creates this file using `CreateFileA` with `GENERIC_WRITE` and the `FILE_ATTRIBUTE_HIDDEN` flag.
 - The string `"Reverse me."` is written to the file using `WriteFile`.
 - No execution, network, persistence, or privilege escalation was observed.
+- SHA256 of compiled binary: `8409bbc7605375d4dfaa89f362effaa92fed50c94f4e803ba5bdca22aa14d120`
 
 **Relevant API Chain:**
 ```c
